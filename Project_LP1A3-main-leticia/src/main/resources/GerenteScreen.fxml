@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <GridPane prefHeight="334.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="85.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="78.0" minHeight="10.0" prefHeight="78.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="89.0" minHeight="10.0" prefHeight="89.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Código Gerente:   " GridPane.rowIndex="1" />
+            <Label GridPane.rowIndex="2" />
+            <TextField fx:id="tfCodGerente" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="tfNomeUsuario" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Nome do Usuário:   " GridPane.rowIndex="2" />
+            <Label text="Senha do Usuário:   " GridPane.rowIndex="3" />
+            <Label text="E-mail do Usuário:   " GridPane.rowIndex="4" />
+            <TextField fx:id="tfSenhaUsuario" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="tfEmailUsuario" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="234.0" text="Cadastrar Usuário" textAlignment="CENTER" GridPane.columnIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </center>
+   <bottom>
+      <ToolBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="42.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <items>
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Voltar" />
+          <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="25.0" prefWidth="114.0" text="Cadastrar Usuário" />
+        </items>
+      </ToolBar>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fiosequeries.GerenciaPedidoOrcamentoController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ebebeb" height="42.0" layoutY="359.0" stroke="#e1e1e1" strokeType="INSIDE" width="600.0" />
+      <Label layoutX="129.0" layoutY="40.0" text="Gerenciamento de Pedidos e Orçamentos">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="bnt_voltaHome" layoutX="516.0" layoutY="366.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="62.0" text="Voltar" />
+      <Button fx:id="bnt_cadastraPedOrc" layoutX="101.0" layoutY="97.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="394.0" text="CADASTRAR PEDIDO/ORÇAMENTO" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="10.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Button>
+      <HBox layoutX="84.0" layoutY="176.0" prefHeight="61.0" prefWidth="502.0" spacing="15.0">
+         <children>
+            <Button fx:id="btn_listaOrc" mnemonicParsing="false" prefHeight="48.0" prefWidth="132.0" text="LISTAR ORÇAMENTOS">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_editaOrc" mnemonicParsing="false" prefHeight="48.0" prefWidth="134.0" text="EDITAR ORÇAMENTO">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_excluiOrc" mnemonicParsing="false" prefHeight="48.0" prefWidth="137.0" text="EXCLUIR ORÇAMENTO">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="84.0" layoutY="253.0" prefHeight="76.0" prefWidth="463.0" spacing="15.0">
+         <children>
+            <Button fx:id="btn_listaPed" mnemonicParsing="false" prefHeight="48.0" prefWidth="135.0" text="LISTAR PEDIDOS" onAction="#goToListarPedidos">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_editaPed" mnemonicParsing="false" prefHeight="48.0" prefWidth="133.0" text="EDITAR PEDIDO" onAction="#goToEditarPedidos">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_excluiPed" mnemonicParsing="false" prefHeight="48.0" prefWidth="138.0" text="EXCLUIR PEDIDO" onAction="#goToExcluirPedidos">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

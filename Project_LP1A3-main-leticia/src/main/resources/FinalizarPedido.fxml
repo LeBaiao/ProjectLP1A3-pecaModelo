@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fiosequeries.FinzalizarPedidoController">
+   <children>
+      <Label layoutX="249.0" layoutY="40.0" text="Finalizar Pedido">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="129.0" layoutY="126.0" promptText="dd/mm/aaa">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="129.0" layoutY="173.0" promptText="dd/mm/aaaa">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <ComboBox layoutX="129.0" layoutY="224.0" prefWidth="150.0" promptText="Selecione " />
+      <ComboBox layoutX="428.0" layoutY="173.0" prefWidth="150.0" promptText="Selecione" />
+      <Label layoutX="33.0" layoutY="130.0" text="Data de entrega" />
+      <Label layoutX="14.0" layoutY="177.0" text="Data de pagamento" />
+      <Label layoutX="20.0" layoutY="228.0" text="Tipo de pagamento" />
+      <Label layoutX="295.0" layoutY="130.0" text="Situação do pagamento" />
+      <Label layoutX="319.0" layoutY="177.0" text="Situação do pedido" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ebebeb" height="42.0" layoutY="358.0" stroke="#e1e1e1" strokeType="INSIDE" width="600.0" />
+      <Button layoutX="397.0" layoutY="366.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" text="Concluir pedido" />
+      <Button layoutX="524.0" layoutY="366.0" mnemonicParsing="false" text="Cancelar" />
+      <ComboBox layoutX="428.0" layoutY="126.0" prefWidth="150.0" promptText="Selecione" />
+   </children>
+</AnchorPane>
